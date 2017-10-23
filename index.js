@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
   res.send('Hello Spinnaker! Version 2');
 });
 
+app.get('/test', function (req, res) {
+  res.send('this is test!');
+})
+
 app.get('/healthcheck', function (req, res) {
   res.send('checking health... OK!');
 });
